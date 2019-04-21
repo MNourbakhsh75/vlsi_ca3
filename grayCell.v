@@ -1,9 +1,9 @@
 module grayCell (
-    input [1:0] g_ikj,
-    input p_ik,
+    input [1:0] pg_ik,
+    input g_kj,
     output g_ij
 );
 
-assign g_ij = (p_ik & g_ikj[1]) | g_ikj[0];
+assign g_ij = (g_kj & pg_ik[1]) | pg_ik[0];
 
 endmodule
