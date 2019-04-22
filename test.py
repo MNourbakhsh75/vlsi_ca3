@@ -8,7 +8,7 @@ with open('input.txt', 'w+') as k:
             k.write(hex(r).replace("0x","")+'\n')
     k.close()
 
-with open('golden.txt', 'w+') as g:
+with open('goldenOutput.txt', 'w+') as g:
 
     for i in l:
         for j in l:
